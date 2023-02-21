@@ -63,7 +63,7 @@ ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN+Mh3U/
 
 标识密钥是一种[私钥](4-ssh-mi-yue.md#4.5.2-si-yao-private-key-idprikey)，在SSH公钥身份验证中用于授予访问服务器的权限。在OpenSSH中可以使用`ssh-keygen`工具生成，通常会生成一对密钥（私钥-公钥），如下图所示。
 
-![](.gitbook/assets/keys2022-03-10-23-53-30.png)
+<figure><img src=".gitbook/assets/keys2022-03-10-23-53-30.png" alt=""><figcaption></figcaption></figure>
 
 ### 4.4 会话密钥 Session Key
 
