@@ -1,6 +1,6 @@
 # 参考
 
-1. [《使用OpenSSH管理Windows》🔗](https://docs.microsoft.com/zh-cn/windows-server/administration/openssh/openssh\_overview)
+1. [《使用OpenSSH管理Windows》🔗](https://docs.microsoft.com/zh-cn/windows-server/administration/openssh/openssh\_overview)/
 2. [《SSH协议基本原理及wireshark抓包分析》🔗](https://juejin.cn/post/6844903685047189512)
 3. [《SSH技术白皮书》🔗](http://www.h3c.com/cn/d\_200805/606213\_30003\_0.htm#\_Toc196815104)
 4. [SSH学院🔗](https://www.ssh.com/academy/ssh)

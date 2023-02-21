@@ -200,7 +200,7 @@ SSH支持多种密钥算法：
 
 主机密钥通常在安装SSH服务时自动生成。它们也可以随时再生，如果主机密钥发生更改，客户端可能会发出有关已更改密钥的警告。
 
-### 6.4 将密钥复制到服务器的工具`ssh-copy-id` :id=sshcopyid
+### 6.4 将密钥复制到服务器的工具`ssh-copy-id`
 
 除了手动将客户端`id-rsa.pub`中的授权密钥复制到服务器端的authorized\_keys内以外，你还可以使用`ssh-copy-id`工具在命令行中完成此操作。
 
@@ -214,11 +214,11 @@ ssh-copy-id  -i <pub_key path> user@serverhost   #<pub_key path>：公钥的文�
 
 !> 在Windows上是没有`ssh-copy-id`命令的，你可以参考[《windows无法使用ssh-copy-id解决办法》](https://blog.csdn.net/qq\_45624685/article/details/122631083)。
 
-### 6.5 实现SSH免密码登录（公钥身份认证） :id=sshpubauth
+### 6.5 实现SSH免密码登录（公钥身份认证）
 
 #### 6.5.1 准备条件
 
-* [安装好SSH客户端与服务器端](broken-reference)
+* [安装好SSH客户端与服务器端](6-shi-yong-jiao-cheng.md#6.1-ssh-ke-hu-duan-yu-fu-wu-qi-duan-an-zhuang-idinstallssh)
 
 #### 6.5.2 简单配置服务器端
 
@@ -243,7 +243,7 @@ chmod 600 ~/.ssh/authorized_keys
 cat ~/.ssh/id_rsa.pub | ssh user 'cat >> .ssh/authorized_keys'
 ```
 
-> 在Linux上你也可以使用[`ssh-copy-id`工具](broken-reference)来复制密钥；
+> 在Linux上你也可以使用[`ssh-copy-id`工具](6-shi-yong-jiao-cheng.md#6.4-jiang-mi-yao-fu-zhi-dao-fu-wu-qi-de-gong-ju-sshcopyid)来复制密钥；
 
 现在你就可以通过以下命令实现免认证登陆了
 
@@ -251,7 +251,9 @@ cat ~/.ssh/id_rsa.pub | ssh user 'cat >> .ssh/authorized_keys'
 ssh <user>@<ipaddress>
 ```
 
-!> 在以Windows为服务器端时可能无法配置成功，参考7.4 Windows配置自动登录的问题
+{% hint style="info" %}
+在以Windows为服务器端时可能无法配置成功，参考7.4 Windows配置自动登录的问题
+{% endhint %}
 
 ### 6.6 SSH身份认证代理`ssh agent`
 
@@ -332,7 +334,7 @@ ssh-add <options> <path>  #<path>密钥的路径
 
 #### 6.7.1 简化登录
 
-已经配置了[免密码登录（公钥身份认证）](broken-reference)，但是如果你的用户名很复杂（例如用户名是邮箱地址等），或者不想及服务器的IP地址，那么可以更改配置文件来简化流程。
+已经配置了[免密码登录（公钥身份认证）](6-shi-yong-jiao-cheng.md#6.5-shi-xian-ssh-mian-mi-ma-deng-lu-gong-yao-shen-fen-ren-zheng)，但是如果你的用户名很复杂（例如用户名是邮箱地址等），或者不想及服务器的IP地址，那么可以更改配置文件来简化流程。
 
 找到配置文件的路径：
 
@@ -353,7 +355,7 @@ Host <name>  #自定义的名称
 ssh <name>
 ```
 
-> \[!TIP] 你还可以参考客户端配置文件详解来添加你需要的功能。
+> 你还可以参考客户端配置文件详解来添加你需要的功能。
 
 ### 6.8 安全文件传输工具
 
@@ -474,7 +476,7 @@ scp -r remote_username@remote_ip:remote_folder local_folder
 
 3. 指定端口号`-P`
 
-> \[!TIP] 使用大写`P`
+> 使用大写`P`
 
 ```powershell
 #scp命令使用端口号4588
@@ -483,7 +485,7 @@ scp -P 4588 remote_username@remote_ip:remote_folder
 
 4. 免认证
 
-配置[SSH公钥身份验证](broken-reference)后即可实现免认证。
+配置[SSH公钥身份验证](6-shi-yong-jiao-cheng.md#6.5-shi-xian-ssh-mian-mi-ma-deng-lu-gong-yao-shen-fen-ren-zheng)后即可实现免认证。
 
 ### 6.9 SSH命令总结
 
