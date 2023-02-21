@@ -18,7 +18,7 @@ X11中的X指的就是X协议；11指的是采用X协议的第11个版本。 X11
 
 #### 7.2.2 X协议原理简介
 
-![issue2022-03-11-00-00-37](https://linley.oss-cn-shanghai.aliyuncs.com/typora\_image/issue2022-03-11-00-00-37.png)
+<figure><img src=".gitbook/assets/issue2022-03-11-00-00-37.png" alt=""><figcaption></figcaption></figure>
 
 Linux系统本身是没有图形化界面的，所谓的图形化界面系统只不过中Linux下的应用程序，所有的Linux系统的图形化界面应用程序底层都是基于X协议。
 

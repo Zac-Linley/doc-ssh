@@ -114,7 +114,7 @@ OpenSSH服务器在启动时读取配置文件，通常配置文件的保存位�
 
 #### 5.2.1 配置文件的关系
 
-![config2022-03-10-23-55-30](https://linley.oss-cn-shanghai.aliyuncs.com/typora\_image/config2022-03-10-23-55-30.png)
+<figure><img src=".gitbook/assets/config2022-03-10-23-55-30.png" alt=""><figcaption></figcaption></figure>
 
 #### 5.2.2 配置详解
 

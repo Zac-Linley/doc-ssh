@@ -74,7 +74,7 @@ systemctl enable sshd
 
 分步教程参考[《Windows-安装SSH服务器》](https://techexpert.tips/zh-hans/windows-zh-hans/%E7%AA%97%E5%8F%A3-%E5%AE%89%E8%A3%85-ssh-%E6%9C%8D%E5%8A%A1%E5%99%A8/)
 
-![guide2022-03-10-23-57-36](https://linley.oss-cn-shanghai.aliyuncs.com/typora\_image/guide2022-03-10-23-57-36.png)
+<figure><img src=".gitbook/assets/guide2022-03-10-23-57-36.png" alt=""><figcaption></figcaption></figure>
 
 对于Window 10（版本1809以下）以及Windows 7手动安装OpenSSH
 
@@ -83,11 +83,11 @@ systemctl enable sshd
 3. 将解药好的文件夹整体复制到`C:/Program Files/`路径下，当然你可以放到你电脑上的任何你喜欢的路径下；
 4. 在**计算机**(windows7)或**此电脑**(windows10)，右键-->属性-->高级系统设置-->环境变量--系统变量，在此框里面找到`Path`进行编辑;
 
-![guide2022-03-10-23-57-58](https://linley.oss-cn-shanghai.aliyuncs.com/typora\_image/guide2022-03-10-23-57-58.png)
+<figure><img src=".gitbook/assets/guide2022-03-10-23-57-58.png" alt=""><figcaption></figcaption></figure>
 
 5. windows7系统编辑时候是以文本形式，所以就需要在最后先添加“;”英文分号，再把你安装路径`C:\Program Files\OpenSSH-Win64`粘贴进去；windows 10系统添加比较方便，进到Path里面，点击新建直接粘贴进去；
 
-![guide2022-03-10-23-58-11](https://linley.oss-cn-shanghai.aliyuncs.com/typora\_image/guide2022-03-10-23-58-11.png)
+<figure><img src=".gitbook/assets/guide2022-03-10-23-58-11.png" alt=""><figcaption></figcaption></figure>
 
 详细教程请参考[《Windows安装OpenSSH支持SSH》](https://www.jianshu.com/p/f8ba3e51d60e)
 
@@ -100,7 +100,7 @@ OpenSSH_for_Windows_8.1p1, LibreSSL 3.0.2
 
 设置SSH服务开机自启动
 
-![guide2022-03-10-23-58-34](https://linley.oss-cn-shanghai.aliyuncs.com/typora\_image/guide2022-03-10-23-58-34.png)
+<figure><img src=".gitbook/assets/guide2022-03-10-23-58-34.png" alt=""><figcaption></figcaption></figure>
 
 ### 6.2 SSH端口号 :id=sshport
 

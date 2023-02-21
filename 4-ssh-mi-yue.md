@@ -42,7 +42,7 @@ ip-address ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAA
 
 SSH中的授权密钥是用于授予用户登录访问权限的[公钥](4-ssh-mi-yue.md#4.5.1-gong-yao-public-key)。身份验证机制称为公钥身份验证。在OpenSSH中可以使用`ssh-keygen`工具生成，通常会生成一对密钥（私钥-公钥），如下图所示。
 
-![keys2022-03-10-23-53-30](https://linley.oss-cn-shanghai.aliyuncs.com/typora\_image/keys2022-03-10-23-53-30.png)
+<figure><img src=".gitbook/assets/keys2022-03-10-23-53-30.png" alt=""><figcaption></figcaption></figure>
 
 #### 4.2.1 用于服务器端的authorized\_keys文件
 
@@ -63,7 +63,7 @@ ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN+Mh3U/
 
 标识密钥是一种[私钥](4-ssh-mi-yue.md#4.5.2-si-yao-private-key-idprikey)，在SSH公钥身份验证中用于授予访问服务器的权限。在OpenSSH中可以使用`ssh-keygen`工具生成，通常会生成一对密钥（私钥-公钥），如下图所示。
 
-![keys2022-03-10-23-53-44](https://linley.oss-cn-shanghai.aliyuncs.com/typora\_image/keys2022-03-10-23-53-44.png)
+![](.gitbook/assets/keys2022-03-10-23-53-30.png)
 
 ### 4.4 会话密钥 Session Key
 
